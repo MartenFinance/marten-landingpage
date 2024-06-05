@@ -1,0 +1,21 @@
+:root {
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+}
+
+a,
+button {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
