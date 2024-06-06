@@ -1,15 +1,20 @@
 import Starknet from '../assets/starknet.svg'
-import LogoImg from '../assets/logo.svg'
 
 function Footer(): JSX.Element {
   return (
-    <div className="mx-auto bg-darknavi pb-2 pt-5 sm:pb-4 lg:py-7 2xl:py-12">
+    <div className="relative w-full mx-auto py-[40px]">
       <div className="container">
-        <div className="mx-auto w-full max-w-screen-2xl">
-          <img src={LogoImg} alt="" />
-          <div className="flex justify-center items-center gap-2">
-            <p className="text-white font-inter">Powered by</p>
-            <img src={Starknet} alt="" className="w-[120px] h-auto" />
+        <div className="mx-auto lg:w-1/2 max-w-screen-2xl">
+          <div className="flex flex-col justify-between items-center gap-5 md:flex-row md:gap-0">
+            <p className="text-[#989898] font-archiaregular m-0">
+              Marten Finance @2024
+            </p>
+            <div className="text-white font-archiaregular flex justify-center items-center gap-2">
+              Powered by
+              <a href="https://www.starknet.io/" target="_blank">
+                <img src={Starknet} alt="" className="w-[120px] h-auto" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
