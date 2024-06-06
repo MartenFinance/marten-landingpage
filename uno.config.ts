@@ -42,12 +42,7 @@ export default defineConfig({
     presetAttributify(),
     presetIcons(),
     presetTypography(),
-    presetWebFonts({
-      fonts: {
-        provider: 'google',
-        inter: 'Inter',
-      },
-    }),
+    presetWebFonts(),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
 })

@@ -1,30 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Navigation from './Navigation'
 import LogoImg from '../assets/logo.svg'
 import { CiMenuBurger } from 'react-icons/ci'
 
 function Header(): JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  const handleScrollEvent = () => {
-    if (typeof window !== 'undefined') {
-      const _scrolled = window.scrollY || document.documentElement.scrollTop
-      setScrolled(_scrolled > 100)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScrollEvent)
-    handleScrollEvent()
-  }, [])
 
   const handleMobileMenuOpen = () => {
     setMobileMenuOpen(true)
   }
 
   return (
-    <div className="w-full md:py-3 xl:py-5 bg-darknavi">
+    <div className="w-full md:py-3 xl:py-5">
       <div className="container">
         <div className="relative z-10 mx-auto flex w-full items-center justify-between py-3.5 md:py-0">
           <a href="/">

@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, sans-serif;
+  font-family: 'archiaregular';
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -10,8 +10,14 @@
 }
 
 body {
+  background-color: #16181f;
   margin: 0;
-  color: #fff;
+}
+
+h1 {
+  background: linear-gradient(to right, #8479ff 0%, #9f63ff 31%, #7a97ff 71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 a,
