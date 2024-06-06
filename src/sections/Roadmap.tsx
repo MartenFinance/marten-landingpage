@@ -3,7 +3,7 @@ import Background from '../assets/Roadmap/background.svg'
 import Timeline from '../assets/Roadmap/timeline.svg'
 
 const contentWrap =
-  'bg-gradient-to-r from-[#2451B4] to-[#6E3DCD] p-px rounded-[4px] max-w-[400px]'
+  'bg-gradient-to-r from-[#2451B4] to-[#6E3DCD] p-px rounded-[4px] sm:max-w-[400px]'
 const contentTitle =
   'text-[20px] font-archiaregular font-bold leading-[30px] mb-4 mt-0 text-white'
 const contentText =
@@ -18,14 +18,14 @@ function Roadmap() {
       />
       <div className="container">
         <SectionTitle>Roadmap</SectionTitle>
-        <div className="relative text-center mt-5">
-          <img src={Timeline} className="hidden w-auto xl:block" />
+        <div className="relative text-center mt-10 xl:mt-5">
+          <img src={Timeline} className="hidden mx-auto w-auto xl:block" />
 
-          <div className="-mt-2 w-full flex auto-rows-fr flex-col items-center justify-center gap-[30px] lg:flex-row lg:flex-wrap">
+          <div className="w-full flex flex-col items-center justify-center gap-[30px] lg:flex-row lg:flex-wrap">
             <div className={contentWrap}>
               <div className="bg-black p-[24px] text-left rounded-[4px] w-fit">
                 <p className={contentTitle}>Q3/2024</p>
-                <p className={contentText}>
+                <p className={contentText + ` mb-6`}>
                   Complete development of Marten V1: Allowing users to deposit
                   only ETH and receive USDM in return
                 </p>
