@@ -1,7 +1,5 @@
 import {
   defineConfig,
-  presetAttributify,
-  presetIcons,
   presetTypography,
   presetUno,
   presetWebFonts,
@@ -15,12 +13,6 @@ export default defineConfig({
       darknavi: '#0c0c4f',
     },
   },
-  presets: [
-    presetUno(),
-    presetAttributify(),
-    presetIcons(),
-    presetTypography(),
-    presetWebFonts(),
-  ],
+  presets: [presetUno(), presetTypography(), presetWebFonts()],
   transformers: [transformerDirectives(), transformerVariantGroup()],
 })
