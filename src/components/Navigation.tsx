@@ -18,9 +18,9 @@ function HeaderNavigation(props: IHeaderNavigationProps): JSX.Element {
   }
 
   const navLink =
-    'text-[14px] lg:text-[16px] font-semibold font-archiaregular leading-[88px] tracking-tight text-white'
+    'text-[14px] lg:text-[16px] font-semibold font-archiaregular leading-[20px] tracking-tight text-white'
   const mobileMenuLink =
-    'text-jet font-bold font-archiaregular text-center leading-[88px] py-8 tracking-tight text-white hover:bg-black hover:text-white'
+    'text-jet font-bold font-archiaregular text-center leading-[20px] py-8 tracking-tight text-white hover:bg-black hover:text-white'
   const navaMobile = 'text-[20px] font-bold leading-6 text-left'
 
   useEffect(() => {
@@ -50,7 +50,7 @@ function HeaderNavigation(props: IHeaderNavigationProps): JSX.Element {
         </a>
       </div>
       <div
-        className={`sm1:px-10 absolute -top-full left-0 flex h-screen w-full flex-col justify-between bg-white p-4 pb-0 transition-all duration-[0.5s] ease-[ease] lg:hidden ${
+        className={`absolute left-0 flex h-screen w-full flex-col justify-between bg-darknavi p-4 pb-0 transition-all duration-[0.5s] ease-[ease] lg:hidden ${
           isOpen
             ? 'visible top-0 z-10 opacity-100'
             : 'invisible z-[-1] opacity-0'
@@ -58,11 +58,11 @@ function HeaderNavigation(props: IHeaderNavigationProps): JSX.Element {
       >
         <div className="flex items-center justify-between text-xl text-white">
           <a href="/">
-            <img src={Logo} alt="" className="sm1:w-[65px] h-auto w-[40px]" />
+            <img src={Logo} alt="" className="h-auto w-[100px]" />
           </a>
-          <AiOutlineClose onClick={onHide} size={28} className="text-jet" />
+          <AiOutlineClose onClick={onHide} size={28} className="text-white" />
         </div>
-        <ul className="list-none py-0">
+        <ul className="list-none p-0">
           <li className={mobileMenuLink} onClick={handleCloseMenu}>
             <a className={navaMobile} href="#docs">
               Docs

@@ -11,23 +11,21 @@ function Header(): JSX.Element {
   }
 
   return (
-    <div className="w-full md:py-3 xl:py-5">
+    <div className="w-full text-center md:py-3 xl:py-5">
       <div className="container">
-        <div className="relative z-10 mx-auto flex w-full items-center justify-between py-3.5 md:py-0">
+        <div className="relative mx-auto flex items-center justify-between py-3.5 md:py-0">
           <a href="/">
             <img src={LogoImg} alt="" className="w-auto sm1:w-[53px]" />
           </a>
-          <div className="mx-auto flex w-full items-center justify-center">
-            <Navigation
-              isOpen={mobileMenuOpen}
-              onHide={() => setMobileMenuOpen(false)}
-            />
-          </div>
+          <Navigation
+            isOpen={mobileMenuOpen}
+            onHide={() => setMobileMenuOpen(false)}
+          />
           <div
             className="border-none text-xl md:hidden"
             onClick={handleMobileMenuOpen}
           >
-            <CiMenuBurger className="text-dark size-[20px] sm1:size-[25px]" />
+            <CiMenuBurger className="text-white size-[20px] sm1:size-[25px]" />
           </div>
         </div>
       </div>
