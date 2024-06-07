@@ -23,12 +23,12 @@ function Dropdown(props: IDropdownProps): JSX.Element {
   }
 
   return (
-    <div className="border-b border-white">
+    <div className="relative border-b border-white">
       <div
-        className="flex justify-between items-center py-5 hover:cursor-pointer"
+        className="flex justify-between items-center py-6 hover:cursor-pointer"
         onClick={() => toggleDropdown(id)}
       >
-        <p className="text-white text-[28px] font-archiaregular m-0 hover:text-[#6E3DCD]">
+        <p className="text-white text-[26px] font-archiaregular m-0 hover:text-[#6E3DCD]">
           {title}
         </p>
         <BsChevronDown fill="#FFDD3F" />
