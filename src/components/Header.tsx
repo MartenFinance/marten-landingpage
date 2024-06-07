@@ -11,7 +11,7 @@ function Header(): JSX.Element {
   }
 
   return (
-    <div className="w-full text-center md:py-3 xl:py-5">
+    <div className="relative w-full text-center md:py-3 xl:py-5">
       <div className="container">
         <div className="relative mx-auto flex items-center justify-between py-3.5 md:py-0">
           <a href="/">

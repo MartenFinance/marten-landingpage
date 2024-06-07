@@ -28,6 +28,7 @@ button {
 }
 
 .container {
+  width: auto;
   padding: 0 1rem;
   margin: 0 auto;
 

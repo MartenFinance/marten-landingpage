@@ -10,13 +10,13 @@ const contentText =
 
 function Roadmap() {
   return (
-    <div className="relative mx-auto w-full pt-[60px] pb-[120px]">
+    <div className="relative w-full pt-[60px] pb-[120px]">
       <div className="container">
         <SectionTitle>Roadmap</SectionTitle>
-        <div className="relative text-center mt-10 xl:mt-5">
+        <div className="text-center mt-10 xl:mt-5">
           <img src={Timeline} className="hidden mx-auto w-auto xl:block" />
 
-          <div className="w-full flex flex-col items-start justify-center gap-[30px] lg:flex-row lg:flex-wrap">
+          <div className="w-full flex flex-col items-center justify-center gap-[30px] lg:flex-row lg:flex-wrap lg:items-start">
             <div className={contentWrap}>
               <div className="bg-black p-[24px] text-left rounded-[4px] w-fit">
                 <p className={contentTitle}>Q3/2024</p>
