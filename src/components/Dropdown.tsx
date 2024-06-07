@@ -23,15 +23,18 @@ function Dropdown(props: IDropdownProps): JSX.Element {
   }
 
   return (
-    <div className="relative border-b border-white">
+    <div className="relative">
       <div
-        className="flex justify-between items-center py-6 hover:cursor-pointer"
+        className="flex justify-between items-center py-8 hover:cursor-pointer"
         onClick={() => toggleDropdown(id)}
       >
         <p className="text-white text-[26px] font-archiaregular m-0 hover:text-[#6E3DCD]">
           {title}
         </p>
-        <BsChevronDown fill="#FFDD3F" />
+        <BsChevronDown
+          fill="#fff"
+          className={`duration-500 ${isOpen ? 'rotate-180' : ''}`}
+        />
       </div>
       <div
         className={`text-white font-archiaregular mb-[30px] ${
@@ -40,6 +43,7 @@ function Dropdown(props: IDropdownProps): JSX.Element {
       >
         {children}
       </div>
+      <div className="h-px w-full bg-gradient-to-r from-[#2451B4] to-[#6E3DCD]"></div>
     </div>
   )
 }
