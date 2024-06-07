@@ -39,8 +39,8 @@ function HeaderNavigation(props: IHeaderNavigationProps): JSX.Element {
         <a className={navLink} href="#docs">
           Docs
         </a>
-        <a className={navLink} href="#features">
-          Features
+        <a className={navLink} href="#faq">
+          FAQ
         </a>
         <a className={navLink} href="#roadmap">
           Roadmap
@@ -69,8 +69,8 @@ function HeaderNavigation(props: IHeaderNavigationProps): JSX.Element {
             </a>
           </li>
           <li className={mobileMenuLink} onClick={handleCloseMenu}>
-            <a className={navaMobile} href="#features">
-              Features
+            <a className={navaMobile} href="#faq">
+              FAQ
             </a>
           </li>
           <li className={mobileMenuLink} onClick={handleCloseMenu}>
