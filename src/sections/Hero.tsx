@@ -27,7 +27,7 @@ function Hero(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="bg-white flex flex-col items-center justify-center gap-[30px] mt-[50px] p-[3rem] xl:flex-row">
+      <div className="bg-white flex flex-col items-center justify-center gap-[30px] mt-[100px] p-[5rem] xl:flex-row">
         <div className="text-left max-w-[400px]">
           <FaChartSimple className="text-[#16181f] text-[36px]" />
           <p className={contentTitle}>0% Interest Rate</p>
