@@ -1,5 +1,4 @@
 import SectionTitle from '../components/SectionTitle'
-import Background from '../assets/Roadmap/background.svg'
 import Timeline from '../assets/Roadmap/timeline.svg'
 
 const contentWrap =
@@ -11,34 +10,34 @@ const contentText =
 
 function Roadmap() {
   return (
-    <div className="relative mx-auto w-full py-[40px]">
-      <img
-        src={Background}
-        className="absolute w-auto h-full z-0 right-0 top-0"
-      />
+    <div className="relative mx-auto w-full pt-[60px] pb-[120px]">
       <div className="container">
         <SectionTitle>Roadmap</SectionTitle>
         <div className="relative text-center mt-10 xl:mt-5">
           <img src={Timeline} className="hidden mx-auto w-auto xl:block" />
 
-          <div className="w-full flex flex-col items-center justify-center gap-[30px] lg:flex-row lg:flex-wrap">
+          <div className="w-full flex flex-col items-start justify-center gap-[30px] lg:flex-row lg:flex-wrap">
             <div className={contentWrap}>
               <div className="bg-black p-[24px] text-left rounded-[4px] w-fit">
                 <p className={contentTitle}>Q3/2024</p>
-                <p className={contentText + ` mb-6`}>
-                  Complete development of Marten V1: Allowing users to deposit
-                  only ETH and receive USDM in return
-                </p>
+                <ul className={contentText + ` list-disc pl-5`}>
+                  <li>Testnet version release</li>
+                  <li>
+                    Finalize development of core features : USDM Borrowing, USDM
+                    Staking, and MARTEN Staking
+                  </li>
+                </ul>
               </div>
             </div>
             <div className={contentWrap}>
               <div className="bg-black p-[24px] text-left rounded-[4px] w-fit">
                 <p className={contentTitle}>Q4/2024</p>
                 <ul className={contentText + ` list-disc pl-5`}>
+                  <li>Mainnet launch</li>
                   <li>Optimize user experience</li>
                   <li>
                     Add more oracle providers to have multiple sources of price
-                    feed - Support LSD tokens as collateral
+                    feed
                   </li>
                 </ul>
               </div>
@@ -49,8 +48,9 @@ function Roadmap() {
                 <ul className={contentText + ` list-disc pl-5`}>
                   <li>
                     MartenV2 will upgrade to a multichain system across various
-                    Layer 2 solutions
+                    Layer 2 blockchains
                   </li>
+                  <li>Support LSD tokens as collateral</li>
                   <li>
                     Expanding our reach and providing users with greater
                     flexibility and access to our services
