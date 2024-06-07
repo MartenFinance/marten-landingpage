@@ -9,7 +9,7 @@ function Hero(): JSX.Element {
   const contentText = 'text-[#16181f] font-archiaregular m-0'
 
   return (
-    <div className="relative w-full mx-auto py-[120px]">
+    <div className="relative w-full mx-auto pt-[120px]">
       <div className="container">
         <div className="mx-auto max-w-screen-2xl">
           <div className="text-center">
