@@ -4,18 +4,17 @@ import { FaPercent } from 'react-icons/fa'
 import { PiCurrencyDollarFill } from 'react-icons/pi'
 
 function Hero(): JSX.Element {
-  const contentTitle =
-    'text-[#16181f] text-[28px] font-archiaregular mt-0 mb-8'
-  const contentText = 'text-[#16181f] font-archiaregular m-0'
+  const contentTitle = 'text-white text-[28px] font-archiaregular mt-0 mb-8'
+  const contentText = 'text-white font-archiaregular m-0'
 
   return (
     <div className="relative w-full mx-auto pt-[120px]">
       <div className="container">
         <div className="mx-auto max-w-screen-2xl">
           <div className="text-center">
-            <p className="text-white text-[64px] font-archiaregular mt-0 mb-10">
+            <h1 className="text-white text-[64px] font-archiaregular mt-0 mb-10">
               0% interest loans
-            </p>
+            </h1>
             <p className="text-[#989898] font-archiaregular m-0">
               Borrow USDM against ETH
             </p>
@@ -27,9 +26,9 @@ function Hero(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="bg-white flex flex-col items-center justify-center gap-[30px] mt-[100px] p-[5rem] xl:flex-row">
+      <div className="flex flex-col items-center justify-center gap-[30px] mt-[100px] p-[5rem] xl:flex-row">
         <div className="text-left max-w-[400px]">
-          <FaChartSimple className="text-[#16181f] text-[36px]" />
+          <FaChartSimple className="text-white text-[36px]" />
           <p className={contentTitle}>0% Interest Rate</p>
           <p className={contentText}>
             Marten charges a small, one-time fee to borrow USDM instead of
@@ -37,7 +36,7 @@ function Hero(): JSX.Element {
           </p>
         </div>
         <div className="text-left max-w-[400px]">
-          <FaPercent className="text-[#16181f] text-[36px]" />
+          <FaPercent className="text-white text-[36px]" />
           <p className={contentTitle}>110% Collateral Ratio</p>
           <p className={contentText}>
             Marten's efficient liquidation mechanism allows users to get the
@@ -45,7 +44,7 @@ function Hero(): JSX.Element {
           </p>
         </div>
         <div className="text-left max-w-[400px]">
-          <PiCurrencyDollarFill className="text-[#16181f] text-[36px]" />
+          <PiCurrencyDollarFill className="text-white text-[36px]" />
           <p className={contentTitle}>Unstoppable Stablecoin</p>
           <p className={contentText}>
             USDM is an immutable, decentralized stablecoin with no centralized
