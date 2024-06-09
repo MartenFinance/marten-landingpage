@@ -9,11 +9,11 @@ function Footer(): JSX.Element {
       <div className="container">
         <div className="mx-auto max-w-screen-2xl">
           <div className="flex flex-col justify-between items-center gap-5 md:flex-row md:gap-0">
-            <p className="order-1 text-[#989898] font-archiaregular m-0">
+            <p className="order-1 text-[#989898] font-archia m-0">
               Marten Finance @2024
             </p>
 
-            <div className="order-3 text-white font-archiaregular flex justify-center items-center gap-2 md:order-2">
+            <div className="order-3 text-white font-archia flex justify-center items-center gap-2 md:order-2">
               Powered by
               <a href="https://www.starknet.io/" target="_blank">
                 <img src={Starknet} alt="" className="w-[120px] h-auto" />

@@ -30,7 +30,7 @@ function Button(props: IButtonProps): JSX.Element {
       break
   }
 
-  const textClassName = `block w-full font-archiaregular font-bold capitalize text-[18px] leading-[24px] m-0`
+  const textClassName = `block w-full font-archia font-bold capitalize text-[18px] leading-[24px] m-0`
 
   return (
     <button

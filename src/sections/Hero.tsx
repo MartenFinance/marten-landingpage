@@ -4,18 +4,18 @@ import { FaPercent } from 'react-icons/fa'
 import { PiCurrencyDollarFill } from 'react-icons/pi'
 
 function Hero(): JSX.Element {
-  const contentTitle = 'text-white text-[28px] font-archiaregular mt-0 mb-8'
-  const contentText = 'text-white font-archiaregular m-0'
+  const contentTitle = 'text-white text-[28px] font-archia mt-0 mb-8'
+  const contentText = 'text-white font-archia m-0'
 
   return (
     <div className="relative w-full mx-auto pt-[120px]">
       <div className="container">
         <div className="mx-auto max-w-screen-2xl">
           <div className="text-center">
-            <h1 className="text-white text-[64px] font-archiaregular mt-0 mb-10">
+            <h1 className="text-white text-[64px] mt-0 mb-10">
               0% interest loans
             </h1>
-            <p className="text-[#989898] font-archiaregular m-0">
+            <p className="text-[#989898] font-archia m-0">
               Borrow USDM against ETH
             </p>
           </div>

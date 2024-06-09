@@ -18,9 +18,9 @@ function HeaderNavigation(props: IHeaderNavigationProps): JSX.Element {
   }
 
   const navLink =
-    'text-[14px] lg:text-[16px] font-semibold font-archiaregular leading-[20px] tracking-tight text-white'
+    'text-[14px] lg:text-[16px] font-semibold font-archia leading-[20px] tracking-tight text-white'
   const mobileMenuLink =
-    'text-jet font-bold font-archiaregular text-center leading-[20px] py-8 tracking-tight text-white hover:bg-black hover:text-white'
+    'text-jet font-bold font-archia text-center leading-[20px] py-8 tracking-tight text-white hover:bg-black hover:text-white'
   const navaMobile = 'text-[20px] font-bold leading-6 text-left'
 
   useEffect(() => {
