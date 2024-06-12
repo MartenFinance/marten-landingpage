@@ -28,7 +28,7 @@ function Dropdown(props: IDropdownProps): JSX.Element {
         className="flex justify-between items-center py-8 hover:cursor-pointer"
         onClick={() => toggleDropdown(id)}
       >
-        <p className="text-white text-[26px] font-archia m-0 hover:text-[#6E3DCD]">
+        <p className="text-white text-[26px] font-archia m-0 hover:text-[#6E3DCD] transition-all duration-500">
           {title}
         </p>
         <BsChevronDown
@@ -37,8 +37,8 @@ function Dropdown(props: IDropdownProps): JSX.Element {
         />
       </div>
       <div
-        className={`text-white font-archia mb-[30px] ${
-          isOpen ? 'block' : 'hidden'
+        className={`text-white font-archia transition-[height] duration-500 ${
+          isOpen ? 'h-auto mb-[30px] overflow-initial' : 'h-0 overflow-hidden'
         }`}
       >
         {children}
