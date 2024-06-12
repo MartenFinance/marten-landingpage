@@ -12,7 +12,7 @@ function FAQ(): JSX.Element {
     <div className="relative w-full mx-auto py-[120px]">
       <div className="container">
         <SectionTitle>FAQ</SectionTitle>
-        <div className="mx-auto lg:w-3/5 max-w-screen-2xl mt-[5rem]">
+        <div className="mx-auto lg:w-[70%] max-w-screen-2xl mt-[5rem]">
           <DropdownContext.Provider value={{ openDropdown, setOpenDropdown }}>
             <Dropdown id="what-is-marten" title="What is Marten Finance?">
               Marten enables users to mint USDM, a decentralized stablecoin
