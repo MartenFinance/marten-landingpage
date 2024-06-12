@@ -1,5 +1,6 @@
 import Button from '../components/Button'
 import { FaChartSimple } from 'react-icons/fa6'
+import { BiLinkExternal } from 'react-icons/bi'
 import { FaPercent } from 'react-icons/fa'
 import { PiCurrencyDollarFill } from 'react-icons/pi'
 
@@ -12,7 +13,7 @@ function Hero(): JSX.Element {
       <div className="container">
         <div className="mx-auto max-w-screen-2xl">
           <div className="text-center">
-            <h1 className="text-white text-[64px] mt-0 mb-10">
+            <h1 className="text-white text-[64px] mt-0 mb-4">
               0% interest loans
             </h1>
             <p className="text-[#989898] font-archia m-0">
@@ -21,8 +22,15 @@ function Hero(): JSX.Element {
           </div>
 
           <div className="flex items-center justify-center gap-[30px] mt-[50px]">
-            <Button>Borrow now</Button>
-            <Button type="secondary">Learn more</Button>
+            <Button className="hover:cursor-not-allowed" tooltip="Coming soon">
+              Borrow now
+            </Button>
+            <Button type="secondary" href="https://docs.marten.finance/">
+              <div className="flex items-center gap-2">
+                <span>Learn more</span>
+                <BiLinkExternal />
+              </div>
+            </Button>
           </div>
         </div>
       </div>
